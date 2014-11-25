@@ -5,8 +5,8 @@ $(document).ready(function(){
     //$('.dynamic').load('content/content.html'); 
     
     // add eventhandler to more link
-    $('.more').click(function(x){
-      x.preventDefault();
+    $('.more').click(function(e){
+      e.preventDefault();
       $('.dynamic').load('content/content.html');
       $(this).remove();
     });
